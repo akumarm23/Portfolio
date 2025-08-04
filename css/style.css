@@ -1,0 +1,96 @@
+/* Animated gradient header background */
+.gradient-background {
+  background: linear-gradient(300deg, #75fe69, #fb4a64, #a968fe);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  color: #ffffff; /* ensure readable text on gradient */
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Consistent vertical rhythm across sections */
+section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Feature & Skills sections slightly tighter to remove gaps */
+#features {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#Skills {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Icon container (used in Features) */
+.icon-square {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+/* Optional circular profile (unused by default) */
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+/* Title image: responsive and constrained */
+.hero-photo {
+  max-height: 260px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Force single line with ellipsis if needed */
+.single-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Skill logos: keep sizing consistent */
+.tech-logo {
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Improve contrast of text on light badges if used */
+.text-body-secondary {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Single-line skills strip: 9 equal items */
+.skills-inline {
+  display: flex;
+  flex-wrap: nowrap; /* keep on one line */
+  gap: 0rem;
+}
+.skill-item {
+  flex: 0 0 calc(100% / 10); /* exactly 1/9 width */
+  max-width: calc(100% / 10);
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  /* allow horizontal scroll on smaller screens */
+  .skills-inline {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
