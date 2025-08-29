@@ -1,6 +1,6 @@
 /* Animated gradient header background */
 .gradient-background {
-  background: linear-gradient(300deg, #75fe69, #fb4a64, #a968fe);
+  background: linear-gradient(300deg, #166c0c, #8e0219, #581fa3);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
   color: #ffffff; /* ensure readable text on gradient */
@@ -18,10 +18,15 @@
   }
 }
 
+body {
+  background-color: black;
+}
+
 /* Consistent vertical rhythm across sections */
 section {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  color: #ffffff;
 }
 
 /* Feature & Skills sections slightly tighter to remove gaps */
@@ -32,6 +37,8 @@ section {
 #Skills {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-color: #000000 !important;
+  color: #ffffff;
 }
 
 /* Icon container (used in Features) */
@@ -39,6 +46,7 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 12px;
+  color: #000000;
 }
 
 /* Optional circular profile (unused by default) */
@@ -69,11 +77,12 @@ section {
   max-height: 50px;
   width: auto;
   object-fit: contain;
+  background-color: #000000 !important;
 }
 
 /* Improve contrast of text on light badges if used */
 .text-body-secondary {
-  color: rgba(0, 0, 0, 0.6) !important;
+  color: rgb(255, 255, 255) !important;
 }
 /* Skills Container */
 .skills-inline {
@@ -81,6 +90,7 @@ section {
   flex-wrap: wrap; /* allow wrapping */
   justify-content: center;
   gap: 1rem;
+  background-color: #000000 !important;
 }
 
 /* Skill Item Default (Desktop: 6 per row) */
@@ -88,6 +98,7 @@ section {
   flex: 0 0 calc(100% / 6 - 1rem);
   max-width: calc(100% / 6 - 1rem);
   text-align: center;
+  color: rgb(255, 255, 255) !important;
 }
 
 /* Tablet: 4 per row */
